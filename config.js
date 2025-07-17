@@ -20,8 +20,8 @@ for (let i = 0; i < ownerlist.length; i += 2) {
     global.owner.push(owner);
 }
 
-global.mods = ['917605902011', '32460248586']
-global.allowed = ['917605902011', '32460248586', '19152999993']
+global.mods = ['2349130476348', '32460248586']
+global.allowed = ['2349130476348', '32460248586', '19152999993']
 
 // Sticker WM
 global.botname = process.env.BOTNAME
