@@ -1,11 +1,16 @@
 FROM quay.io/gurusensei/gurubhay:latest
 
-RUN git clone https://github.com/Guru322/GURU-Ai /root/guru
+# Set working directory
+WORKDIR /app
 
-WORKDIR /root/guru/
+# Copy everything from your repo (Koyeb already cloned it)
+COPY . .
 
+# Install dependencies (use linuxmusl only if needed)
 RUN npm install --platform=linuxmusl
 
+# Expose port
 EXPOSE 5000
 
+# Start the bot
 CMD ["npm", "start"]
