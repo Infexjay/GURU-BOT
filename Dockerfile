@@ -1,8 +1,8 @@
 # Use official Node.js base image with Alpine (musl-based)
 FROM node:20-alpine
 
-# Install dependencies needed for native module builds
-RUN apk add --no-cache python3 make g++
+# Install git + dependencies for native Node modules
+RUN apk add --no-cache git python3 make g++
 
 # Clone the app
 RUN git clone https://github.com/Guru322/GURU-Ai /app
